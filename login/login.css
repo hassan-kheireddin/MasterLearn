@@ -1,0 +1,75 @@
+body {
+    font-family: 'Lexend', sans-serif;
+    background-color: #0abb87;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.login-container {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 30px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+input[type="text"], input[type="email"], input[type="password"] {
+    width: 100%;
+    max-width: 170px;
+    padding: 5px;
+    margin: 8px 0px 10px 20px;
+    border: 2px solid #0abb87;
+    border-radius: 8px;
+}
+
+.login-btn {
+    color: #0abb87;
+    font-size: 12px;
+    width: 280px;
+    max-width: 300px;
+    font-weight: bold;
+    border: solid #0abb87;
+    border-radius: 8px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.login-btn:hover {
+    background-color: #08956f;
+    transform: scale(1.05);
+    color: #ffffff;
+}
+
+.login-btn:focus {
+    outline: 2px solid #0abb87;
+    outline-offset: 2px;
+}
+
+.login-btn:disabled {
+    background-color: #cccccc;
+    color: #666666;
+    cursor: not-allowed;
+}
+
+
+a {
+    display: block;
+    text-align: center;
+    margin-top: 10px;
+    color: #0abb87;
+    text-decoration: none;
+    font-size: small;
+}
+
+a:hover {
+    text-decoration: underline;
+}
