@@ -1,7 +1,7 @@
 function insertNavbar() {
     const navbar = `
     <nav class="navbar">
-        <div class="nav-logo">
+        <div class="logo">
             <a href="#">
                 <img src="../images/logo.png" alt="logo" class="logo-img">
             </a>
@@ -22,5 +22,5 @@ function insertNavbar() {
     `;
 
     document.body.insertAdjacentHTML('afterbegin', navbar);
-    window.onload = insertNavbar;
 }
+window.onload = insertNavbar;
