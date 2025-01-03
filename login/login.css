@@ -61,7 +61,7 @@ input[type="text"], input[type="email"], input[type="password"] {
 }
 
 
-a {
+.forgot-password a {
     display: block;
     text-align: center;
     margin-top: 10px;
@@ -70,6 +70,6 @@ a {
     font-size: small;
 }
 
-a:hover {
+.forgot-password a:hover {
     text-decoration: underline;
 }
