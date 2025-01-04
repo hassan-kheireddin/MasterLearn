@@ -380,3 +380,7 @@ a:hover {
     margin: 60px;
     color: #666;
 }
+
+html {
+    scroll-behavior: smooth;
+}
