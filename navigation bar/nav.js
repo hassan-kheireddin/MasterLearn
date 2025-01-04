@@ -8,7 +8,7 @@ function insertNavbar() {
         </div>
         <div class="search-bar">
             <span class="search-btn"></span>
-            <input type="text" placeholder="Search Everything..." class="search-input">
+            <input type="search" placeholder="Search Everything..." class="search-input">
         </div>
         <ul class="nav-links">
             <li><a href="../home/home.html">Home</a></li>
