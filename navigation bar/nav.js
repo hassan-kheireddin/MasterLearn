@@ -2,7 +2,7 @@ function insertNavbar() {
     const navbar = `
     <nav class="navbar">
         <div class="logo">
-            <a href="#">
+            <a href="../home/home.html">
                 <img src="../images/logo.png" alt="logo" class="logo-img">
             </a>
         </div>
