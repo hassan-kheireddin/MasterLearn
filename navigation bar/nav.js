@@ -12,7 +12,7 @@ function insertNavbar() {
         </div>
         <ul class="nav-links">
             <li><a href="../home/home.html">Home</a></li>
-            <li><a href="#">Learn</a></li>
+            <li><a href="../courses/courses.html">Learn</a></li>
             <li><a href="#">About</a></li>
             <li><a href="../contact us/contact-us.html">Contact</a></li>
             <li><a href="../signup/signup.html">Sign Up</a></li>
