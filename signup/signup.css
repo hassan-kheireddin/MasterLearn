@@ -22,10 +22,11 @@ body {
     border: 2px solid #fff;
     padding: 50px 50px 50px 20px;
     border-radius: 20px 0px 0px 20px;
-    margin-top: 100px;
+    margin-top: 200px;
     margin-left: 200px;
     width: 400px;
     height: 500px;
+    margin-bottom: 50px;
 }
 
 
@@ -90,9 +91,10 @@ input[type="checkbox"] {
 }
 
 .image-container img {
-    margin-top: 100px;
+    margin-top: 200px;
     width: 400px;
     height: 500px;
     object-fit: cover;
     border-radius: 0px 20px 20px 0px;
+    margin-bottom: 50px;
 }
