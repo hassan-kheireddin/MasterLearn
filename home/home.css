@@ -1,14 +1,10 @@
 body {
-    font-family: 'Quicksand', sans-serif;
-    margin: 0;
-    padding: 0;
-    justify-content: center; /* Centers horizontally */
-    align-items: center;    /* Centers vertically */
-    height: 100vh;          /* Full viewport height */
-    background-color: #f0f0f0; /* Light background color */
+    background-color: #f0f0f0;
 }
-
-.homepage-container {
+.all-container {
+  font-family: 'Quicksand', sans-serif;
+}
+.homepage-container {    
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -162,16 +158,15 @@ body {
     color: #333;
   }
   
-  /* Row layout for text beside the image */
 .row {
     display: flex;
-    flex-wrap: wrap; /* Ensures responsiveness */
+    flex-wrap: wrap;
     align-items: center;
     background-color: #fff;
   }
   
 .text {
-    flex: 1; /* Takes up half the space */
+    flex: 1;
     padding-right: 20px;
   }
   
@@ -187,14 +182,6 @@ body {
     line-height: 1.6;
     padding-left: 80px;
     color: #666;
-  }
-  
-.image {
-    flex: 1; /* Takes up half the space */
-  }
-  
-.image img {
-    max-width: 100%;
   }
 
 .doc-btn {
@@ -331,7 +318,7 @@ footer h3 {
     margin-bottom: 20px;
 }
 
-ul {
+.footer-container ul {
     list-style: none;
     padding: 0;
 }
@@ -339,13 +326,14 @@ ul {
 .follow {
     margin-left: 150px;
 }
-ul li {
+
+.social-media li {
     display: flex;
     align-items: center;
     margin-bottom: 5px;
 }
 
-ul li img {
+.social-media li img {
     width: 24px;
     height: 24px;
     margin-right: 10px;
@@ -353,12 +341,12 @@ ul li img {
     margin-left: 200px;
 }
 
-a {
+.footer-container a {
     text-decoration: none;
     color: #666;
 }
 
-a:hover {
+.footer-container a:hover {
     color: #0abb87;
 }
 
