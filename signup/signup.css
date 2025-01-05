@@ -5,7 +5,7 @@
 }
 
 body {
-    background-color: #e2f9f2;
+    background-color: #f9f9f9;
     font-family: 'Lexend', sans-serif;
     height: 100vh;
 }
@@ -17,7 +17,7 @@ body {
     width: 100%;
 }
 .sign-up-container {
-    background-color:#ffffff;
+    background-color:#fff;
     border: 2px solid #fff;
     padding: 50px 50px 50px 20px;
     border-radius: 20px 0px 0px 20px;
@@ -44,6 +44,7 @@ input[type="checkbox"] {
 
 .signup-btn {
     color: #0abb87;
+    background-color: #fff;
     font-size: 12px;
     width: 280px;
     max-width: 300px;
