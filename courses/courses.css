@@ -107,7 +107,7 @@ footer h3 {
     width: 24px;
     height: 24px;
     margin-right: 10px;
-    margin-top: 20px;
+    margin-top: 10px;
     margin-left: 200px;
 }
 
@@ -121,7 +121,7 @@ footer h3 {
 }
 
 .contact-info p {
-    margin: 30px 0;
+    margin: 20px 0;
     transition: transform 0.3s ease;
 }
 
