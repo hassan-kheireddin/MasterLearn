@@ -1,11 +1,5 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
 body {
-    background-color: #f0f0f0;
+    background-color: #e2f9f2;
 }
 .all-container {
   font-family: 'Quicksand', sans-serif;
@@ -21,7 +15,7 @@ body {
 .home-text {
     flex: 1; /* Takes equal space as the image section */
     padding: 20px;
-    margin-top: 150px;
+    margin-top: 80px;
     box-sizing: border-box;
 }
 
@@ -50,6 +44,7 @@ body {
 
 .discover-btn {
     margin-left: 50px;
+    text-decoration: none;
     margin-bottom: 80px;
     padding: 20px;
     background-color: #0abb87;
@@ -281,7 +276,7 @@ body {
   }
   
   .reason {
-    flex: 1 1 300px;
+    flex: 1 1 30px;
     max-width: 400px;
     background-color: #fff;
     border: 1px solid #ddd;
@@ -372,7 +367,7 @@ footer h3 {
 .copyright {
     text-align: center;
     margin: 60px;
-    color: #666;
+    color: #666;;
 }
 
 html {

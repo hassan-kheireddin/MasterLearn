@@ -4,6 +4,11 @@
     box-sizing: border-box;
 }
 
+.body {
+    font-family: 'Lexend', sans-serif;
+    display: flex;
+    height: 100vh;
+}
 h3 {
     text-align: center;
 }
@@ -14,8 +19,8 @@ h3 {
 }
 /* General body styles */
 .all-container {
+    background-color: #e2f9f2;
     font-family: 'Lexend', sans-serif;
-    background-color: #0abb87;
     line-height: 1.6;
     margin: 0;
     padding: 20px;
@@ -25,17 +30,32 @@ h3 {
     align-items: center;
 }
 
-/* Container for the contact form */
+.image-container {
+    width: 50%;
+    align-items: center;
+}
+
+.image-container img {
+    margin-top: 160px;
+    width: 400px;
+    height: 490px;
+    object-fit: cover;
+    border-radius: 20px 0px 0px 20px;
+    margin-bottom: 50px;
+    margin-left: 187px;
+}
+
 .contact-us-container {
     max-width: 600px;
+    flex: 1;
     background: #fff;
     padding: 20px;
     margin-top: 100px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    border-radius: 20px;
-    border: solid #0abb87;
+    border-radius: 0 20px 20px 0;
     width: 80%;
     height: 80%;
+    margin-right: 200px;
 }
 
 input[type="text"], input[type="email"] {
@@ -64,6 +84,7 @@ textarea {
     border-radius: 8px;
     cursor: pointer;
     transition: background-color 0.3s ease;
+    margin-left: 280px;
 }
 
 .submit-btn:hover {
