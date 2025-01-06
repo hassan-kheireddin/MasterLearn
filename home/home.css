@@ -13,7 +13,7 @@ body {
 }
 
 .home-text {
-    flex: 1; /* Takes equal space as the image section */
+    flex: 1;
     padding: 20px;
     margin-top: 80px;
     box-sizing: border-box;
@@ -163,7 +163,7 @@ body {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    background-color: #fff;
+    background-color: rgb(72, 70, 91);
   }
   
 .text {
@@ -175,14 +175,14 @@ body {
     font-size: 1.8rem;
     margin-bottom: 10px;
     padding-left: 80px;
-    color: #000000;
+    color: #ffffff;
   }
   
 .text p {
     font-size: 1rem;
     line-height: 1.6;
     padding-left: 80px;
-    color: #666;
+    color: rgb(220, 220, 220);
   }
 
 .doc-btn {
@@ -194,43 +194,6 @@ body {
     font-size: 1rem;
     cursor: pointer;
     transition: background-color 0.3s ease;
-  }
-
-  .row2 {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    padding: 0px;
-    margin: 0px;
-    background-color: rgb(72, 70, 91);
-  }
-  
-.text2 {
-    flex: 1; /* Takes up half the space */
-    padding-right: 20px;
-  }
-  
-.text2 h2 {
-    font-size: 1.8rem;
-    margin-bottom: 10px;
-    padding-left: 80px;
-    color: #ffffff;
-  }
-  
-.text2 p {
-    font-size: 1rem;
-    line-height: 1.6;
-    padding-left: 80px;
-    color: rgba(255, 255, 255, 0.8);
-  }
-  
-.image2 {
-    flex: 1;
-  }
-  
-.image2 img {
-    flex: 1;
-    max-width: 100%;
   }
 
 .forum-btn {
