@@ -1,7 +1,5 @@
 # MasterLearn
 
-[![42 École](https://img.shields.io/badge/42-École-000000?style=flat&logo=42&logoColor=white)](https://42.fr)
-
 MasterLearn is an educational platform designed to enhance learning experiences through interactive content and user-friendly interfaces. This project includes various modules such as login, signup, and course management to provide a comprehensive learning environment.
 
 ---
