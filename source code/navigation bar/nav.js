@@ -2,13 +2,13 @@ function insertNavbar() {
     const navbar = `
     <nav class="navbar">
         <div class="logo">
-            <a href="../home/home.html">
+            <a href="../../home.html">
                 <img src="../images/logo.png" alt="logo" class="logo-img">
             </a>
         </div>
 
         <ul class="nav-links">
-            <li><a href="../home/home.html">Home</a></li>
+            <li><a href="../../home.html">Home</a></li>
             <li><a href="../courses/courses.html">Learn</a></li>
             <li><a href="../about/about.html">About</a></li>
             <li><a href="../contact us/contact-us.html">Contact</a></li>
