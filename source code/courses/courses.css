@@ -62,8 +62,7 @@
 .course-card .btn {
     display: block;
     text-align: center;
-    margin-top: 20px;
-    margin-left: 25px;
+    margin: 20px 0 0 25px;
     padding: 10px 20px;
     color: #fff;
     background-color: #0abb87;
@@ -112,9 +111,7 @@ footer h3 {
 .social-media ul li img {
     width: 24px;
     height: 24px;
-    margin-right: 10px;
-    margin-top: 10px;
-    margin-left: 200px;
+    margin: 10px 10px 0 200px;
 }
 
 .footer-container a {
