@@ -1,3 +1,13 @@
+@font-face {
+    font-family: 'Lexend';
+    src: url('../fonts/Lexend/Lexend-VariableFont_wght.ttf') format('truetype');
+  }
+  
+  @font-face {
+    font-family: 'Quicksand';
+    src: url('../fonts/Quicksand/Quicksand-VariableFont_wght.ttf') format('truetype');
+  }
+
 * {
     margin: 0;
     padding: 0;
