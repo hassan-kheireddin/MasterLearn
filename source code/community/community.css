@@ -78,7 +78,7 @@ body {
 .feed {
     flex: 1;
     padding: 80px 20px 20px 20px;
-    margin-left: 270px; /* Adjust for sidebar */
+    margin-left: 200px; /* Adjust for sidebar */
 }
 
 /* Add Post Section Styling */
@@ -98,24 +98,19 @@ body {
     justify-content: space-between;
 }
 
-/* Image Styling */
-.post-image-container {
-    margin-right: 20px; /* Space between image and textarea */
-}
-
-.post-image-container.post-image {
-    width: 30px;  /* Adjust the image size */
-    height: 30px;
+.post-image-container .post-image {
+    width: 60px;  /* Adjust the image size */
+    height: 60px;
     border-radius: 50%;
     object-fit: cover;
 }
 
 /* Textarea Styling */
 .add-post textarea {
-    width: 75%;
+    width: 85%;
     border: 1px solid #ddd;
     border-radius: 20px;
-    height: 50px;
+    height: 60px;
     padding-top: 20px;
     padding-left: 20px;
     font-size: 14px;
@@ -156,16 +151,17 @@ body {
 
 /* Small, rounded profile image beside the name */
 .profile-img {
-    width: 30px;  
-    height: 30px; 
+    width: 50px;  
+    height: 50px; 
     border-radius: 50%;
     margin-right: 10px;
+    object-fit: cover;
 }
 
 /* Name Styling */
 .post-header h3 {
     margin: 0;
-    color: #0abb87;
+    color: #3c3f3e;
 }
 
 /* Post Content Styling */
@@ -177,7 +173,7 @@ body {
 /* Post Image (if any) */
 .post-image {
     width: 100%;
-    height: auto;
+    height: 400px;
     margin-top: 10px;
 }
 

@@ -1,5 +1,5 @@
 // Function to create a new post
-function addPost(name, profileImage, content) {
+function addPost(name, profileImage, content, postImage) {
     const feed = document.getElementById("feed");
 
     // Create post container
@@ -26,11 +26,14 @@ function addPost(name, profileImage, content) {
     const postContent = document.createElement("p");
     postContent.textContent = content;
 
-    // Create the main image under the content
-    const img = document.createElement("img");
-    img.src = profileImage; // Or another image source if needed
-    img.alt = "Post Image";
-    img.classList.add("post-image"); // Add a class for styling
+    // Create the main post image (Separate from profile image)
+    let img;
+    if (postImage) {
+        img = document.createElement("img");
+        img.src = postImage;
+        img.alt = "Post Image";
+        img.classList.add("post-image"); // Add a class for styling
+    }
 
     // Create an <hr> element
     const hr = document.createElement("hr");
@@ -58,7 +61,7 @@ function addPost(name, profileImage, content) {
     // Assemble post
     post.appendChild(postHeader);
     post.appendChild(postContent);
-    post.appendChild(img);
+    if (postImage) post.appendChild(img); // Append the post image if available
     post.appendChild(hr);
     post.appendChild(postActions);
 
@@ -66,10 +69,9 @@ function addPost(name, profileImage, content) {
     feed.appendChild(post);
 }
 
-// Example: Adding posts dynamically
-addPost("John Doe", "../images/backend.jpg", "Excited to join this amazing community! 🚀");
-addPost("Jane Smith", "images/user2.jpg", "Learning new things every day. Keep growing! 🌱");
-addPost("Mike Johnson", "images/user3.jpg", "Just finished an awesome project! Can't wait to share it. 💡");
-addPost("Sarah Lee", "images/user4.jpg", "Networking with like-minded people is the key to success! 🤝");
-addPost("David Brown", "images/user5.jpg", "Does anyone have good book recommendations for personal growth? 📚");
-
+// Example: Adding posts dynamically with different profile and post images
+addPost("Sophia Bennett", "../images/girl1.jpg", "How many Screen you want to focus?", "../images/post1.jpg");
+addPost("Jane Smith", "../images/user3.jpg", "Learning new things every day. Keep growing! 🌱", "../images/post2.jpg");
+addPost("Mike Johnson", "../images/user2.jpg", "HTML is best start to master web development. 💡", "../images/post3.jpg");
+addPost("Sarah Lee", "../images/user5.jpg", "Networking with like-minded people is the key to success! 🤝", "../images/post4.jpg");
+addPost("David Brown", "../images/user4.jpg", "Any one have resources  for AI? 📚", "../images/post5.jpg");

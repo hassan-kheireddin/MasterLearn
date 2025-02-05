@@ -297,6 +297,11 @@ body {
     color: rgb(220, 220, 220);
   }
 
+.text .link{
+  color: #ddd;
+  text-decoration: none;
+}
+
 .doc-btn {
     margin: 30px 0 30px 80px;
     padding: 20px;
