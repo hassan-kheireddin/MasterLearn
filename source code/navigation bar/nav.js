@@ -10,10 +10,10 @@ function insertNavbar() {
             </div>
 
             <ul class="nav-links">
-                <li><a href="../courses/courses.html">Courses</a></li>
+                <li><a href="../courses/courses.html" style="margin-left: 20px;">Courses</a></li>
                 <li><a href="#">Documents</a></li>
                 <li><a href="#">Road Map</a><li>
-                <li><a href="../community/community">Community</a></li>
+                <li><a href="../community/community.html" style="margin-left: 55px;">Community</a></li>
                 <li><a href="../about/about.html">About</a></li>
                 <li><a href="../contact us/contact-us.html">Contact</a></li>
             </ul>
@@ -25,7 +25,6 @@ function insertNavbar() {
             </ul>
         </div>
     </nav>
-
     `;
 
     document.body.insertAdjacentHTML('afterbegin', navbar);

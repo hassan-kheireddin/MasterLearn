@@ -1,8 +1,13 @@
 /* Body Styling */
+
+* {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
 body {
     font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
     background-color: #f4f4f4;
 }
 
@@ -14,7 +19,7 @@ body {
 
 /* Sidebar Styling */
 .sidebar {
-    width: 150px;
+    width: 180px;
     background-color: #ffffff;
     box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
     height: 100vh;
@@ -25,7 +30,7 @@ body {
 /* User Profile Styling */
 .user-profile {
     margin-bottom: 30px;
-    text-align: center; /* Center profile info */
+
 }
 
 .user-profile .user-img {
@@ -39,7 +44,7 @@ body {
 .user-profile .user-name {
     color: #242625;
     margin-bottom: 10px;
-    font-size: 25px;
+    font-size: 20px;
 }
 
 /* Sidebar Links */

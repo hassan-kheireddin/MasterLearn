@@ -58,12 +58,10 @@ input[type="text"], input[type="email"], input[type="password"] {
     font-size: 12px;
     width: 200px;
     max-width: 300px;
-    font-weight: bold;
     border: solid #0abb87;
     border-radius: 8px;
     padding: 10px 20px;
     cursor: pointer;
-     margin-left: 10px;
     transition: background-color 0.3s ease, transform 0.2s ease;
 }
 

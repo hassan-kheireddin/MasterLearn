@@ -67,7 +67,6 @@ body {
   text-decoration: none;
   color: #0abb87;
   transition: all 0.3s ease;
-  margin: 8px;
 }
 
 .nav-links a:hover {
@@ -78,6 +77,36 @@ body {
 
 /* Logo Styling */
 .logo img {
+  width: 80px;
+  height: auto;
+  max-height: 500px; 
+  margin-top: 10px;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 15px;
+}
+
+.nav-links a {
+  background-color: #fff;
+  text-align: center;
+  padding: 8px 15px;
+  border: solid 3px #0abb87;
+  border-radius: 5px;
+  font-size: 1em;
+  text-decoration: none;
+  color: #0abb87;
+}
+
+.nav-links a:hover{
+  background-color: #0abb87;
+  transform: scale(1.05);
+  color: #f4f4f4;
+}
+
+.logo img{
   width: 80px;
   height: auto;
   max-height: 500px; 
