@@ -1,0 +1,208 @@
+/* Body Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+/* Container for Sidebar and Feed */
+.container {
+    display: flex;
+    max-width: 1200px;
+}
+
+/* Sidebar Styling */
+.sidebar {
+    width: 150px;
+    background-color: #ffffff;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    height: 100vh;
+    position: fixed;
+    padding: 120px 20px 20px 20px;
+}
+
+/* User Profile Styling */
+.user-profile {
+    margin-bottom: 30px;
+    text-align: center; /* Center profile info */
+}
+
+.user-profile .user-img {
+    width: 80px;  /* Adjust for size */
+    height: 80px; /* Adjust for size */
+    border-radius: 50%;
+    margin-bottom: 10px;
+    object-fit: cover; /* Ensure the image doesn't get stretched */
+}
+
+.user-profile .user-name {
+    color: #242625;
+    margin-bottom: 10px;
+    font-size: 25px;
+}
+
+/* Sidebar Links */
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    margin: 20px 0 40px 0;
+}
+
+.sidebar ul li a {
+    text-decoration: none;
+    color: #151515;
+    display: flex;
+    align-items: center; /* Align icon and text */
+    font-size: 16px;
+}
+
+.sidebar ul li a:hover {
+    color: #0abb87;
+}
+
+.sidebar ul li a i {
+    margin-right: 10px; /* Space between icon and text */
+    font-size: 15px; /* Size of icons */
+}
+
+/* Feed Styling */
+.feed {
+    flex: 1;
+    padding: 80px 20px 20px 20px;
+    margin-left: 270px; /* Adjust for sidebar */
+}
+
+/* Add Post Section Styling */
+.add-post {
+    background-color: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+/* Wrapper to arrange image, textarea and button */
+.post-content-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Image Styling */
+.post-image-container {
+    margin-right: 20px; /* Space between image and textarea */
+}
+
+.post-image-container.post-image {
+    width: 30px;  /* Adjust the image size */
+    height: 30px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+/* Textarea Styling */
+.add-post textarea {
+    width: 75%;
+    border: 1px solid #ddd;
+    border-radius: 20px;
+    height: 50px;
+    padding-top: 20px;
+    padding-left: 20px;
+    font-size: 14px;
+    resize: none;
+}
+
+/* Post Button Styling */
+.add-post .post-button {
+    background-color: #0abb87;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.add-post .post-button:hover {
+    background-color: #087c63;
+}
+
+/* Post Styling */
+.post {
+    background-color: white;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Post Header (Profile Image and Name) */
+.post-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+/* Small, rounded profile image beside the name */
+.profile-img {
+    width: 30px;  
+    height: 30px; 
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+/* Name Styling */
+.post-header h3 {
+    margin: 0;
+    color: #0abb87;
+}
+
+/* Post Content Styling */
+.post-content {
+    margin-top: 5px;
+    color: #333;
+}
+
+/* Post Image (if any) */
+.post-image {
+    width: 100%;
+    height: auto;
+    margin-top: 10px;
+}
+
+/* Horizontal Line (below the content) */
+hr {
+    margin-top: 15px;
+    border: 0;
+    border-top: 1px solid #ccc;
+}
+
+/* Action Buttons Styling */
+.post-actions {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.post-actions button {
+    background-color: #ffffff;
+    border: 1.5px solid #0abb87;
+    color: #0abb87;
+    padding: 5px 10px;
+    border-radius: 4px;
+    font-size: 12px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.post-actions button:hover {
+    background-color: #0abb87;
+    color: #ffffff;
+    transform: scale(1.05);
+}

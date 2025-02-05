@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Community</title>
+    <link rel="icon" href="../images/smlogo.png" type="image/x-icon">
+    <script src="../navigation bar/nav.js" defer></script>
+    <link rel="stylesheet" href="../navigation bar/nav.css">
+    <link rel="stylesheet" href="contact-us.css">
+    <link rel="stylesheet" href="community.css">
+    <!-- Font Awesome CDN for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <aside class="sidebar">
+            <!-- User Profile Section -->
+            <div class="user-profile">
+                <img src="../images/logo.png" alt="User Profile" class="user-img">
+                <h3 class="user-name">John Doe</h3>
+            </div>
+            <!-- Sidebar Navigation -->
+            <ul>
+                <li><a href="#"><i class="fas fa-pencil-alt"></i>Your Posts</a></li>
+                <li><a href="#"><i class="fas fa-users"></i> My Network</a></li>
+                <li><a href="#"><i class="fas fa-envelope"></i> Messages</a></li>
+                <li><a href="#"><i class="fas fa-bell"></i> Notifications</a></li>
+            </ul>
+        </aside>
+        <main class="feed" id="feed">
+            <!-- Add a Post Section -->
+            <div class="add-post">
+                <div class="post-content-wrapper">
+                    <div class="post-image-container">
+                        <img src="../images/" alt="Post Image" class="post-image">
+                    </div>
+                    <textarea placeholder="What's on your mind?" rows="4" cols="50"></textarea>
+                    <button class="post-button">Post</button>
+                </div>
+            </div>
+        </main>
+        
+        <script src="community.js"></script>
+    </div>
+</body>
+</html>
+
+
+

@@ -7,17 +7,15 @@
     font-family: 'Quicksand';
     src: url('../fonts/Quicksand/Quicksand-VariableFont_wght.ttf') format('truetype');
   }
-
-.navbar {
+  .navbar {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Lexend', sans-serif;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-between; /* Push left and right sections apart */
     background-color: #ffffff;
-    color: white;
     padding: 10px 20px;
     position: fixed;
     top: 0;
@@ -27,32 +25,51 @@
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-.search-bar {
+/* Left Section: Logo + Main Navigation */
+.nav-left {
     display: flex;
     align-items: center;
-    flex-grow: 1;
+    gap: 20px; /* Adds space between logo and links */
 }
 
-.search-btn {
-    background-image: url('../images/search.png');
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;;
-    width: 60px;
-    height: 60px;
-    border-radius: 50%;
-    margin-left: 20px;
-    cursor: pointer;
+/* Right Section: Sign Up & Log In */
+.nav-right {
+    display: flex;
+    align-items: center;
 }
 
-.search-bar input {
-    width: 100%;
-    max-width: 300px;
+/* Navigation Links */
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 15px;
+}
+
+/* Buttons */
+.nav-links a {
+    background-color: #fff;
+    text-align: center;
     padding: 8px 15px;
-    border-radius: 5px;
-    outline: none;
-    font-size: 1em;
     border: solid 3px #0abb87;
+    border-radius: 5px;
+    font-size: 1em;
+    text-decoration: none;
+    color: #0abb87;
+    transition: all 0.3s ease;
+}
+
+.nav-links a:hover {
+    background-color: #0abb87;
+    transform: scale(1.05);
+    color: #f4f4f4;
+}
+
+/* Logo Styling */
+.logo img {
+    width: 80px;
+    height: auto;
+    max-height: 500px; 
+    margin-top: 10px;
 }
 
 .nav-links {

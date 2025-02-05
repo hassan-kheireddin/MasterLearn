@@ -1,0 +1,114 @@
+@font-face {
+    font-family: 'Lexend';
+    src: url('../fonts/Lexend/Lexend-VariableFont_wght.ttf') format('truetype');
+  }
+  
+  @font-face {
+    font-family: 'Quicksand';
+    src: url('../fonts/Quicksand/Quicksand-VariableFont_wght.ttf') format('truetype');
+  }
+
+footer {
+    font-family: 'Lexend', sans-serif;
+    background-color: #ffffff;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer-container {
+    display: flex;
+    align-items: flex-start;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+/* Fixing Social Media Section */
+.social-media {
+    display: flex;
+    align-items: flex-start; /* Aligns h3 and ul to the top */
+    gap: 20px; /* Adds space between h3 and ul */
+    margin-left: 200px; /* Keeps social-media section spaced out */
+}
+
+.social-media h3 {
+    margin: 0; /* Remove unnecessary margin */
+    white-space: nowrap; /* Prevents wrapping */
+    padding: 70px 50px 0 0;
+}
+
+.social-media ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column; /* Stacks social links vertically */
+}
+
+/* Styling Social Media Icons */
+.social-media li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+.social-media li img {
+    width: 24px;
+    height: 24px;
+    margin-right: 10px; /* Space between icon and text */
+}
+
+/* Contact Info Section */
+.contact-info {
+    display: flex;
+    align-items: flex-start; /* Aligns h3 and ul to the top */
+    gap: 20px; /* Adds space between h3 and ul */
+    margin-left: 120px; /* Keeps social-media section spaced out */
+}
+
+.contact-info h3 {
+    margin: 0; /* Remove unnecessary margin */
+    white-space: nowrap; /* Prevents wrapping */
+    padding: 70px 50px 0 0;
+}
+
+.contact-info ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column; /* Stacks social links vertically */
+}
+
+/* Styling Social Media Icons */
+.contact-info li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+.contact-info p {
+    margin: 10px 0;
+    transition: transform 0.3s ease;
+}
+
+.contact-info p:hover {
+    transform: translateX(5%);
+}
+
+/* Links Styling */
+.footer-container a {
+    text-decoration: none;
+    color: #666;
+}
+
+.footer-container a:hover {
+    color: #0abb87;
+}
+
+
+.copyright {
+    text-align: center;
+    margin: 10px;
+    padding-right: 30px;
+    color: #666;
+}
