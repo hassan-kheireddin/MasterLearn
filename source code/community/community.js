@@ -1,20 +1,17 @@
-// Function to create a new post
+
 function addPost(name, profileImage, content, postImage) {
     const feed = document.getElementById("feed");
 
-    // Create post container
     const post = document.createElement("div");
     post.classList.add("post");
 
-    // Create post header (Profile Image + Name)
     const postHeader = document.createElement("div");
     postHeader.classList.add("post-header");
 
-    // Profile image next to the name
     const profileImg = document.createElement("img");
     profileImg.src = profileImage;
     profileImg.alt = name;
-    profileImg.classList.add("profile-img"); // Add a class for styling
+    profileImg.classList.add("profile-img");
 
     const h3 = document.createElement("h3");
     h3.textContent = name;
@@ -22,23 +19,20 @@ function addPost(name, profileImage, content, postImage) {
     postHeader.appendChild(profileImg);
     postHeader.appendChild(h3);
 
-    // Create post content below the name
     const postContent = document.createElement("p");
     postContent.textContent = content;
 
-    // Create the main post image (Separate from profile image)
     let img;
     if (postImage) {
         img = document.createElement("img");
         img.src = postImage;
         img.alt = "Post Image";
-        img.classList.add("post-image"); // Add a class for styling
+        img.classList.add("post-image");
     }
 
-    // Create an <hr> element
     const hr = document.createElement("hr");
 
-    // Create action buttons
+
     const postActions = document.createElement("div");
     postActions.classList.add("post-actions");
 
@@ -58,18 +52,16 @@ function addPost(name, profileImage, content, postImage) {
     postActions.appendChild(commentButton);
     postActions.appendChild(repostButton);
 
-    // Assemble post
     post.appendChild(postHeader);
     post.appendChild(postContent);
-    if (postImage) post.appendChild(img); // Append the post image if available
+    if (postImage) post.appendChild(img);
     post.appendChild(hr);
     post.appendChild(postActions);
 
-    // Add to feed
+
     feed.appendChild(post);
 }
 
-// Example: Adding posts dynamically with different profile and post images
 addPost("Sophia Bennett", "../images/girl1.jpg", "How many Screen you want to focus?", "../images/post1.jpg");
 addPost("Jane Smith", "../images/user3.jpg", "Learning new things every day. Keep growing! 🌱", "../images/post2.jpg");
 addPost("Mike Johnson", "../images/user2.jpg", "HTML is best start to master web development. 💡", "../images/post3.jpg");

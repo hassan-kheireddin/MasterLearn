@@ -8,14 +8,14 @@
     src: url('../fonts/Quicksand/Quicksand-VariableFont_wght.ttf') format('truetype');
   }
 
-  .navbar {
+.navbar {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Lexend', sans-serif;
     display: flex;
     align-items: center;
-    justify-content: space-between; /* Push left and right sections apart */
+    justify-content: space-between;
     background-color: #ffffff;
     padding: 10px 20px;
     position: fixed;
@@ -26,27 +26,23 @@
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-/* Left Section: Logo + Main Navigation */
 .nav-left {
     display: flex;
     align-items: center;
-    gap: 30px; /* Adds space between logo and links */
+    gap: 30px;
 }
 
-/* Right Section: Sign Up & Log In */
 .nav-right {
     display: flex;
     align-items: center;
 }
 
-/* Navigation Links */
 .nav-links {
     display: flex;
     list-style: none;
     gap: 30px;
 }
 
-/* Buttons */
 .nav-links a {
     background-color: #fff;
     text-align: center;
@@ -65,7 +61,6 @@
     color: #f4f4f4;
 }
 
-/* Logo Styling */
 .logo img {
     width: 80px;
     height: auto;

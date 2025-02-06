@@ -1,5 +1,3 @@
-/* Body Styling */
-
 * {
         margin: 0;
         padding: 0;
@@ -11,13 +9,11 @@ body {
     background-color: #f4f4f4;
 }
 
-/* Container for Sidebar and Feed */
 .container {
     display: flex;
     max-width: 1200px;
 }
 
-/* Sidebar Styling */
 .sidebar {
     width: 180px;
     background-color: #ffffff;
@@ -27,18 +23,17 @@ body {
     padding: 120px 20px 20px 20px;
 }
 
-/* User Profile Styling */
 .user-profile {
     margin-bottom: 30px;
 
 }
 
 .user-profile .user-img {
-    width: 80px;  /* Adjust for size */
-    height: 80px; /* Adjust for size */
+    width: 80px;
+    height: 80px;
     border-radius: 50%;
     margin-bottom: 10px;
-    object-fit: cover; /* Ensure the image doesn't get stretched */
+    object-fit: cover;
 }
 
 .user-profile .user-name {
@@ -47,7 +42,6 @@ body {
     font-size: 20px;
 }
 
-/* Sidebar Links */
 .sidebar ul {
     list-style: none;
     padding: 0;
@@ -61,7 +55,7 @@ body {
     text-decoration: none;
     color: #151515;
     display: flex;
-    align-items: center; /* Align icon and text */
+    align-items: center;
     font-size: 16px;
 }
 
@@ -70,18 +64,16 @@ body {
 }
 
 .sidebar ul li a i {
-    margin-right: 10px; /* Space between icon and text */
-    font-size: 15px; /* Size of icons */
+    margin-right: 10px;
+    font-size: 15px;
 }
 
-/* Feed Styling */
 .feed {
     flex: 1;
     padding: 80px 20px 20px 20px;
-    margin-left: 200px; /* Adjust for sidebar */
+    margin-left: 200px;
 }
 
-/* Add Post Section Styling */
 .add-post {
     background-color: white;
     padding: 20px;
@@ -91,7 +83,6 @@ body {
     margin-top: 20px;
 }
 
-/* Wrapper to arrange image, textarea and button */
 .post-content-wrapper {
     display: flex;
     align-items: center;
@@ -99,13 +90,12 @@ body {
 }
 
 .post-image-container .post-image {
-    width: 60px;  /* Adjust the image size */
+    width: 60px;
     height: 60px;
     border-radius: 50%;
     object-fit: cover;
 }
 
-/* Textarea Styling */
 .add-post textarea {
     width: 85%;
     border: 1px solid #ddd;
@@ -117,7 +107,6 @@ body {
     resize: none;
 }
 
-/* Post Button Styling */
 .add-post .post-button {
     background-color: #0abb87;
     color: white;
@@ -133,7 +122,6 @@ body {
     background-color: #087c63;
 }
 
-/* Post Styling */
 .post {
     background-color: white;
     padding: 15px;
@@ -142,14 +130,12 @@ body {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-/* Post Header (Profile Image and Name) */
 .post-header {
     display: flex;
     align-items: center;
     margin-bottom: 10px;
 }
 
-/* Small, rounded profile image beside the name */
 .profile-img {
     width: 50px;  
     height: 50px; 
@@ -158,33 +144,28 @@ body {
     object-fit: cover;
 }
 
-/* Name Styling */
 .post-header h3 {
     margin: 0;
     color: #3c3f3e;
 }
 
-/* Post Content Styling */
 .post-content {
     margin-top: 5px;
     color: #333;
 }
 
-/* Post Image (if any) */
 .post-image {
     width: 100%;
     height: 400px;
     margin-top: 10px;
 }
 
-/* Horizontal Line (below the content) */
 hr {
     margin-top: 15px;
     border: 0;
     border-top: 1px solid #ccc;
 }
 
-/* Action Buttons Styling */
 .post-actions {
     display: flex;
     justify-content: space-between;

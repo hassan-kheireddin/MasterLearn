@@ -9,17 +9,14 @@
     <link rel="stylesheet" href="roadmap.css">
 </head>
 <body>
-
     <div class="container">
         <h1>Generate Your Roadmap</h1>
         <textarea id="prompt" rows="4" placeholder="Enter your prompt..."></textarea>
         <button id="generate">Generate</button>
         <div id="response"></div>
-    </div>
-
-    
+    </div>  
     <script>
-        const apiKey = ''; // Replace with your actual API key
+        const apiKey = '';
         const apiUrl = 'https://generativelanguage.googleapis.com/v1beta/models/gemini-1.0-pro:generateContent?key=' + apiKey;
     
         document.getElementById('generate').addEventListener('click', async () => {
@@ -47,8 +44,7 @@
                 if (data.candidates && data.candidates.length > 0 && data.candidates[0].content && data.candidates[0].content.parts.length > 0) {
                     let roadmapText = data.candidates[0].content.parts[0].text;
     
-                    // Format the response for better readability
-                    roadmapText = roadmapText.replace(/\n/g, '<br>'); // Preserve line breaks
+                    roadmapText = roadmapText.replace(/\n/g, '<br>');
     
                     responseDiv.innerHTML = `<strong>📍 Roadmap for: ${prompt}</strong><br><br>` + roadmapText;
                 } else {
@@ -61,7 +57,5 @@
             }
         });
     </script>
-    
-
 </body>
 </html>

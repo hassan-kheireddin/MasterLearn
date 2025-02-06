@@ -13,6 +13,7 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 body {
     background-color: #f9f9f9;
     font-family: 'Lexend', sans-serif;
@@ -81,7 +82,6 @@ input[type="text"], input[type="email"], input[type="password"] {
     color: #666666;
     cursor: not-allowed;
 }
-
 
 .forgot-password a {
     display: block;
