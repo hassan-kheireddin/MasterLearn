@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generate Roadmap</title>
+    <script src="../navigation bar/nav.js" defer></script>
+    <link rel="stylesheet" href="../navigation bar/nav.css">
+    <link rel="stylesheet" href="roadmap.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Generate Your Roadmap</h1>
+        <textarea id="prompt" rows="4" placeholder="Enter your prompt..."></textarea>
+        <button id="generate">Generate</button>
+        <div id="response"></div>
+    </div>
+
+    
+    <script>
+        const apiKey = ''; // Replace with your actual API key
+        const apiUrl = 'https://generativelanguage.googleapis.com/v1beta/models/gemini-1.0-pro:generateContent?key=' + apiKey;
+    
+        document.getElementById('generate').addEventListener('click', async () => {
+            const prompt = document.getElementById('prompt').value;
+            const responseDiv = document.getElementById('response');
+            responseDiv.style.display = "block";
+            responseDiv.textContent = 'Generating roadmap...';
+    
+            try {
+                const response = await fetch(apiUrl, {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify({
+                        contents: [{ 
+                            role: 'user', 
+                            parts: [{ text: `Create a step-by-step roadmap for: ${prompt}` }] 
+                        }]
+                    })
+                });
+    
+                const data = await response.json();
+    
+                if (data.candidates && data.candidates.length > 0 && data.candidates[0].content && data.candidates[0].content.parts.length > 0) {
+                    let roadmapText = data.candidates[0].content.parts[0].text;
+    
+                    // Format the response for better readability
+                    roadmapText = roadmapText.replace(/\n/g, '<br>'); // Preserve line breaks
+    
+                    responseDiv.innerHTML = `<strong>📍 Roadmap for: ${prompt}</strong><br><br>` + roadmapText;
+                } else {
+                    responseDiv.textContent = 'No roadmap generated.';
+                }
+    
+            } catch (error) {
+                console.error('Error:', error);
+                responseDiv.textContent = 'Error fetching roadmap. Please check your API key or connection.';
+            }
+        });
+    </script>
+    
+
+</body>
+</html>

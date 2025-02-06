@@ -40,7 +40,7 @@ body {
 .nav-left {
   display: flex;
   align-items: center;
-  gap: 20px; /* Adds space between logo and links */
+  gap: 30px; /* Adds space between logo and links */
 }
 
 /* Right Section: Sign Up & Log In */
@@ -53,7 +53,7 @@ body {
 .nav-links {
   display: flex;
   list-style: none;
-  gap: 15px;
+  gap: 30px;
 }
 
 /* Buttons */
@@ -106,7 +106,7 @@ body {
   color: #f4f4f4;
 }
 
-.logo img{
+.logo img {
   width: 80px;
   height: auto;
   max-height: 500px; 
